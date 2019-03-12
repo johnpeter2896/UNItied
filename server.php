@@ -67,4 +67,37 @@
     }
   }
 
+  //If the Add Qualification button is clicked
+  //UNItied Admin add Qualification
+  if(isset($_POST['addQualification']))
+  {
+    $qualificationName = $_POST['qualName'];
+    $minimumScore = $_POST['minScore'];
+    $maximumScore = $_POST['maxScore'];
+    $resultCalcDescription = $_POST['resultCalcDesc'];
+    $gradeList = $_POST['grdList'];
+
+    if(empty($qualificationName) || empty($minimumScore) ||
+      empty($maximumScore) || empty($resultCalcDescription) || empty($gradeList))
+    {
+      $error = 1;
+    }
+
+    if($error == 1)
+    {
+      $_SESSION['message'] = "Fill in the blank";
+      header('location: AddQualification.php?error=1');
+    }
+    else
+    {
+      $sql = "INSERT INTO maintainqualification(qualificationName, minimumScore,
+        maximumScore, resultCalcDescription, gradeList)
+        VALUES ('$qualificationName','$minimumScore','$maximumScore','$resultCalcDescription','$gradeList')";
+
+      mysqli_query($con, $sql);
+
+      header('location: MaintainQualification.php');
+    }
+  }
+
 ?>

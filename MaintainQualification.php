@@ -34,32 +34,31 @@
         <tr>
           <th>Qualification Name</th>
           <th>Maximum Score</th>
+          <th></th>
         </tr>
+        <?php
+          $con = mysqli_connect("localhost", "root", "", "unitied");
+          if($con -> connect_error)
+          {
+            die("Connection failed: " . $con -> connect_error);
+          }
+          $id = $_SESSION['adminUsername'];
+          $sql = "SELECT qualificationName, maximumScore FROM maintainqualification";
+          $result = $con -> query($sql);
+          if($result -> num_rows > 0)
+          {
+            while($row = $result -> fetch_assoc())
+            {
+              echo "<tr><td>" . $row["qualificationName"] . "</td><td>" . $row["maximumScore"] . "</td><td>"
+              . '<a href="#' . '">Edit Qualification</a></td></tr>';
+            }
+          }
+        ?>
       </table><br><br>
 
-      <form method="post" action="MaintainQualification.php">
-
-        <div class="textbox">Qualification Name:
-          <input type="text" name="$qualificationName" required>
-        </div>
-
-        <div class="textbox">Minimum Score:
-          <input type="text" name="$minimumScore" required>
-        </div>
-
-        <div class="textbox">Maximum Score:
-          <input type="text" name="$maximumScore" required><br>Grade List:
-        </div>
-
-        <textarea rows = "12" cols = "50" name = "$gradeList">
-        </textarea>
-
-        <div class="textbox">Description:
-          <input type="text" name="$resultCalcDescription" required>
-        </div>
-
-        <button class="btn" type="submit" name="addQualification">Add Qualification</button>
-      </form>
+      <a href="AddQualification.php">
+        <input class="btn" type="button" name="" value="Add Qualification">
+      </a>
     </div>
   </div>
 
