@@ -72,7 +72,7 @@
 <br>
 <br>
 <br>
-<input type="submit" class="form-control submit" value="Log In">
+<input type="submit" class="form-control submit" value="Record Programme">
   </form>
 
 </div>
