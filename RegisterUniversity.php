@@ -22,6 +22,9 @@
     margin: 0 auto;
     margin-left: auto;
     margin-right: auto;
+    text-align: left;
+  }
+  #button{
     text-align: center;
   }
   </style>
@@ -84,7 +87,7 @@
 <br>
 <br>
 
-<input type="submit" class="form-control submit" value="Submit University">
+<input id="button" type="submit" class="form-control submit" value="Submit University">
   </form>
 
 </div>

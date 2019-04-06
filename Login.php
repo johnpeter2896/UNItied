@@ -22,7 +22,7 @@
     margin: 0 auto;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
+    text-align: left;
   }
   #passwordText{
     font-size: 14pt;
@@ -31,7 +31,7 @@
     margin: 0 auto;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
+    text-align: left;
   }
   #submitBtn{
     height: 32px;

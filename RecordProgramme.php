@@ -24,6 +24,9 @@
     margin: 0 auto;
     margin-left: auto;
     margin-right: auto;
+    text-align: left;
+  }
+  #button{
     text-align: center;
   }
   </style>
@@ -85,7 +88,7 @@
 <br>
 <br>
 <br>
-<input type="submit" class="form-control submit" value="Record Programme">
+<input id="button" type="submit" class="form-control submit" value="Record Programme">
   </form>
 
 </div>

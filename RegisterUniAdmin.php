@@ -22,6 +22,9 @@
     margin: 0 auto;
     margin-left: auto;
     margin-right: auto;
+    text-align: left;
+  }
+  #button{
     text-align: center;
   }
   </style>
@@ -85,7 +88,7 @@
 </div>
 <br>
 
-<input type="submit" class="form-control submit" value="Submit University Administrator">
+<input id="button" type="submit" class="form-control submit" value="Submit University Administrator">
   </form>
 
 </div>
