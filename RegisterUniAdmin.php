@@ -11,7 +11,20 @@
   <link rel="stylesheet" href="slick/slick.css">
   <link rel="stylesheet" href="slick/slick-theme.css">
   <link rel="stylesheet" href="main.css" type="text/css">
-
+  <style>
+  #register-form{
+    text-align: center;
+  }
+  .form-control{
+    font-size: 14pt;
+    height: 32px;
+    width : 600px;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  </style>
 
 </head>
 
@@ -33,10 +46,10 @@
 </div>
   </div>
   <ul class="nav">
-    <li><a href="#news">Homepage</a></li>
-    <li><a href="#about">About Us</a></li>
-    <li><a onclick="window.location.href='Login.php'">Log In</a></li>
-    <li><a href="#register">Contact Us</a></li>
+    <li><a href="Homepage.php">Home</a></li>
+    <li><a href="AboutUs.php">About Us</a></li>
+    <li><a href="Login.php">Log In</a></li>
+    <li><a href="RegisterUniversity.php">Registry</a></li>
   </ul>
 
 </div>

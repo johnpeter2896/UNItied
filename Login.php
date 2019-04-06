@@ -11,6 +11,36 @@
   <link rel="stylesheet" href="slick/slick.css">
   <link rel="stylesheet" href="slick/slick-theme.css">
   <link rel="stylesheet" href="main.css" type="text/css">
+  <style>
+  #register-form{
+    text-align: center;
+  }
+  #usernameText{
+    font-size: 14pt;
+    height: 32px;
+    width : 600px;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  #passwordText{
+    font-size: 14pt;
+    height: 32px;
+    width : 600px;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  #submitBtn{
+    height: 32px;
+    width : 600px;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  </style>
 
 
 </head>
@@ -33,10 +63,10 @@
 </div>
   </div>
   <ul class="nav">
-    <li><a href="#news">Homepage</a></li>
-    <li><a href="#about">About Us</a></li>
-    <li><a onclick="window.location.href='Login.php'">Log In</a></li>
-    <li><a href="#register">Contact Us</a></li>
+    <li><a href="Homepage.php">Home</a></li>
+    <li><a href="AboutUs.php">About Us</a></li>
+    <li><a href="Login.php">Log In</a></li>
+    <li><a href="RegisterUniversity.php">Registry</a></li>
   </ul>
 
 </div>
@@ -54,19 +84,19 @@
 </div>
 <div class="register-form">
 <form id="register-form"  action="Loginbackend.php" method="POST">
-<label for="username">Username(Required, minimum 5 characters)</label>
+<label  for="username">Username(Required, minimum 5 characters)</label>
 <div class="form-group">
-<input class="form-control" name="username" placeholder="Username" type="text">
+<input id="usernameText" class="form-control" name="username" placeholder="Username" type="text">
 </div>
 <label for="password">password(Required,minimum 5 characters and 1 number)</label>
 <div class="form-group">
-<input name="password" type="password" class="form-control"  placeholder="password"></input>
+<input id="passwordText" name="password" type="password" class="form-control"  placeholder="password"></input>
 </div>
 <br>
 <br>
 <br>
 <br>
-<input type="submit" class="form-control submit" value="Log In">
+<input id="submitBtn" type="submit" class="form-control submit" value="Log In">
   </form>
 
 </div>

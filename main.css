@@ -183,3 +183,6 @@ a:hover{
   color: #ff0000;
   border: #ff0000;
 }
+#register-form{
+  text-align: center;
+}
