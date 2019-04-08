@@ -1,4 +1,6 @@
+<?php  session_start(); ?>
 <!DOCTYPE html>
+
 <html lang="en" dir="ltr">
 
 <head>
@@ -15,7 +17,7 @@
   #register-form{
     text-align: center;
   }
-  #usernameText{
+  .form-control{
     font-size: 14pt;
     height: 32px;
     width : 600px;
@@ -24,24 +26,10 @@
     margin-right: auto;
     text-align: left;
   }
-  #passwordText{
-    font-size: 14pt;
-    height: 32px;
-    width : 600px;
-    margin: 0 auto;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-  }
-  #submitBtn{
-    height: 32px;
-    width : 600px;
-    margin: 0 auto;
-    margin-left: auto;
-    margin-right: auto;
+  #button{
+    text-align: center;
   }
   </style>
-
 
 </head>
 
@@ -80,26 +68,22 @@
 <div id="register" class="container-fluid section">
   <br>
 <div class="contact-title">
-  <center><h2>Log In</h2></center>
+  <center><h2>Lists of Programmes</h2></center>
 </div>
-<div class="register-form">
-<form id="register-form"  action="Loginbackend.php" method="POST">
-<label  for="username">Username(Required, minimum 5 characters)</label>
-<div class="form-group">
-<input id="usernameText" class="form-control" name="username" placeholder="Username" type="text">
-</div>
-<label for="password">password(Required,minimum 5 characters and 1 number)</label>
-<div class="form-group">
-<input id="passwordText" name="password" type="password" class="form-control"  placeholder="password"></input>
-</div>
-<br>
-<input id="submitBtn" type="submit" class="form-control submit" value="Log In"><br>
-<a href="ApplicantSignup.php">
-  <input class="btn" type="button" name="" value="Sign Up?">
-</a>
-  </form>
 
+<div id="mainArea">
+  <div class="container page">
+    <table>
+      <tr>
+        <th>Programme Name</th>
+        <th>University Name</th>
+        <th>Closing Date</th>
+        <th></th>
+      </tr>
+    </table>
+  </div>
 </div>
+
 <br>
 </div>
 

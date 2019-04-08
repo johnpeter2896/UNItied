@@ -34,7 +34,7 @@
       <li><a href="Homepage.php">Home</a></li>
       <li><a href="AboutUs.php">About Us</a></li>
       <li><a href="Login.php">Log In</a></li>
-      <li><a href="#register">Contact Us</a></li>
+      <li><a href="RegisterUniversity.php">Registry</a></li>
     </ul>
 
   </div>
@@ -43,9 +43,7 @@
   <div id="register" class="container-fluid section">
     <br>
     <div class="contact-title">
-      <center><h2>Home</h2></center>
-      <div class="mainContent">testing
-      </div>
+      <img src="homebackground.jpg" height="500" width="1230" alt="">
     </div>
     <br>
   </div>

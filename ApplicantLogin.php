@@ -83,20 +83,17 @@
   <center><h2>Log In</h2></center>
 </div>
 <div class="register-form">
-<form id="register-form"  action="Loginbackend.php" method="POST">
-<label  for="username">Username(Required, minimum 5 characters)</label>
+<form id="register-form"  action="applicantloginbackend.php" method="POST">
+<label  for="username">Username</label>
 <div class="form-group">
-<input id="usernameText" class="form-control" name="username" placeholder="Username" type="text">
+<input id="usernameText" class="form-control" name="username"type="text">
 </div>
-<label for="password">password(Required,minimum 5 characters and 1 number)</label>
+<label for="password">Password</label>
 <div class="form-group">
-<input id="passwordText" name="password" type="password" class="form-control"  placeholder="password"></input>
+<input id="passwordText" name="password" type="password" class="form-control"></input>
 </div>
 <br>
-<input id="submitBtn" type="submit" class="form-control submit" value="Log In"><br>
-<a href="ApplicantSignup.php">
-  <input class="btn" type="button" name="" value="Sign Up?">
-</a>
+<input id="submitBtn" type="submit" class="form-control submit" value="Log In" name="applicantloginbtn"><br>
   </form>
 
 </div>

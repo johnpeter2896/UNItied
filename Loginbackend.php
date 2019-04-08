@@ -33,7 +33,7 @@
 
           echo '<script type="text/javascript">
                   alert("Correct Login!");
-                  window.location.href="RecordProgramme.php";
+                  window.location.href="UniAdminLoginMenu.php";
                 </script>';
        }
       }

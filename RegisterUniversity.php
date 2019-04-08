@@ -83,9 +83,6 @@
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
 
 <input id="button" type="submit" class="form-control submit" value="Submit University">
   </form>
