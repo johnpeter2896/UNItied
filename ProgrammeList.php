@@ -29,6 +29,19 @@
   #button{
     text-align: center;
   }
+  table {
+    font-family: Courier New;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td, th  {
+    border: 1px solid #ffffff;
+    text-align: left;
+    padding: 8px;
+    color: black;
+  }
+
   </style>
 
 </head>
@@ -68,7 +81,7 @@
 <div id="register" class="container-fluid section">
   <br>
 <div class="contact-title">
-  <center><h2>Lists of Programmes</h2></center>
+  <center><h2>Lists of Programmes</h2></center><br>
 </div>
 
 <div id="mainArea">
@@ -76,10 +89,28 @@
     <table>
       <tr>
         <th>Programme Name</th>
-        <th>University Name</th>
         <th>Closing Date</th>
         <th></th>
       </tr>
+
+      <?php
+        $con = mysqli_connect("localhost", "root", "", "phpmyadmin");
+        if($con -> connect_error)
+        {
+          die("Connection failed: " . $con -> connect_error);
+        }
+        $sql = "SELECT programmeName, closingDate FROM programme";
+        $result = $con -> query($sql);
+        if($result -> num_rows > 0)
+        {
+          while($row = $result -> fetch_assoc())
+          {
+            echo "<tr><td>" . $row["programmeName"] . "</td><td>" . $row["closingDate"] . "</td><td>"
+            . '<a href="#' . '">Apply Programme</a></td></tr>';
+          }
+        }
+      ?>
+
     </table>
   </div>
 </div>

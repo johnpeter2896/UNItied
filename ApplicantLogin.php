@@ -86,14 +86,14 @@
 <form id="register-form"  action="applicantloginbackend.php" method="POST">
 <label  for="username">Username</label>
 <div class="form-group">
-<input id="usernameText" class="form-control" name="username"type="text">
+<input id="usernameText" class="form-control" name="username"type="text" required>
 </div>
 <label for="password">Password</label>
 <div class="form-group">
-<input id="passwordText" name="password" type="password" class="form-control"></input>
+<input id="passwordText" name="password" type="password" class="form-control" required></input>
 </div>
 <br>
-<input id="submitBtn" type="submit" class="form-control submit" value="Log In" name="applicantloginbtn"><br>
+<input id="submitBtn" type="submit" class="form-control submit" value="Log In"><br>
   </form>
 
 </div>
