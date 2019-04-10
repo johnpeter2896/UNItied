@@ -10,6 +10,7 @@
 
  $ApplicantUsername=$_POST['applicantUsername'];
  $ApplicantPassword=$_POST['applicantPassword'];
+ $uniID =$_SESSION["universityID"];
 
 
 
