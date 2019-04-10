@@ -84,11 +84,11 @@
 </div>
 <div class="register-form">
 <form id="register-form"  action="applicantloginbackend.php" method="POST">
-<label  for="username">Username</label>
+<label  for="applicantUsername">Username</label>
 <div class="form-group">
 <input id="usernameText" class="form-control" name="username"type="text" required>
 </div>
-<label for="password">Password</label>
+<label for="applicantPassword">Password</label>
 <div class="form-group">
 <input id="passwordText" name="password" type="password" class="form-control" required></input>
 </div>
