@@ -1,6 +1,4 @@
-<?php  session_start(); ?>
 <!DOCTYPE html>
-
 <html lang="en" dir="ltr">
 
 <head>
@@ -17,7 +15,7 @@
   #register-form{
     text-align: center;
   }
-  .form-control{
+  #usernameText{
     font-size: 14pt;
     height: 32px;
     width : 600px;
@@ -26,10 +24,24 @@
     margin-right: auto;
     text-align: left;
   }
-  #button{
-    text-align: center;
+  #passwordText{
+    font-size: 14pt;
+    height: 32px;
+    width : 600px;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+  #submitBtn{
+    height: 32px;
+    width : 600px;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
   </style>
+
 
 </head>
 
@@ -68,52 +80,17 @@
 <div id="register" class="container-fluid section">
   <br>
 <div class="contact-title">
-  <center><h2>Applicant Signup</h2></center>
+  <center><h2>Log In</h2></center><br><br>
 </div>
 <div class="register-form">
-<form id="register-form"  action="applicantregister.php" method="POST">
-<label for="name">Username</label>
-<div class="form-group">
-<input class="form-control" name="applicantUsername" type="text">
-</div>
-
-<label for="name">Password</label>
-<div class="form-group">
-<input class="form-control" name="applicantPassword" type="password">
-</div>
-
-<label for="name">Full Name</label>
-<div class="form-group">
-<input class="form-control" name="applicantName" type="text">
-</div>
-
-<label for="name">Email</label>
-<div class="form-group">
-<input class="form-control" name="applicantEmail" type="text">
-</div>
-
-<label for="name">ID Type (mykad / passport)</label>
-<div class="form-group">
-<input class="form-control" name="applicantIDType" type="text">
-</div>
-
-<label for="name">ID Number</label>
-<div class="form-group">
-<input class="form-control" name="applicantIDNo" type="text">
-</div>
-
-<label for="name">Mobile Number</label>
-<div class="form-group">
-<input class="form-control" name="applicantMobileNo" type="text">
-</div>
-
-<label for="name">Date of Birth</label>
-<div class="form-group">
-<input class="form-control" name="applicantDOB" type="date">
-</div>
-
-<br>
-<input id="button" type="submit" class="form-control submit" value="Sign Up">
+  <center>
+<a href="Login.php">
+  <input class="btn" type="button" name="" value="UNI Admin"><br><br>
+</a>
+<a href="ApplicantLogin.php">
+  <input class="btn" type="button" name="" value="Applicant">
+</a>
+</center>
   </form>
 
 </div>

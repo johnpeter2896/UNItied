@@ -33,7 +33,7 @@
     <ul class="nav">
       <li><a href="Homepage.php">Home</a></li>
       <li><a href="AboutUs.php">About Us</a></li>
-      <li><a href="Login.php">Log In</a></li>
+      <li><a href="LoginMenu.php">Log In</a></li>
       <li><a href="RegisterUniversity.php">Registry</a></li>
     </ul>
 
