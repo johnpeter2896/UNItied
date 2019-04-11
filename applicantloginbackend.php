@@ -8,10 +8,8 @@
 
  session_start();
 
- $ApplicantUsername=$_POST['applicantUsername'];
- $ApplicantPassword=$_POST['applicantPassword'];
- $uniID =$_SESSION["universityID"];
-
+ $applicantUsername=$_POST['appuser'];
+ $applicantPassword=$_POST['apppass'];
 
 
    $sql = "SELECT * FROM applicant";
@@ -19,9 +17,8 @@
 
    if ($result->num_rows > 0){
     while($row = $result->fetch_assoc()) {
-      if($ApplicantUsername == $row["applicantUsername"] &&  $ApplicantPassword == $row["applicantPassword"]){
-        if (mysqli_query($con, $sql)) {
-
+      if($applicantUsername == $row["ApplicantUsername"] &&  $applicantPassword == $row["ApplicantPassword"]){
+        
           echo '<script type="text/javascript">
                   alert("Login Successfull!");
                   window.location.href="ProgrammeList.php";
@@ -29,7 +26,6 @@
        }
       }
     } // end while
-    }
     echo '<script type="text/javascript">
           alert("ERROR: Username or password invalid.");
             window.location.href="ApplicantLogin.php";

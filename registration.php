@@ -24,7 +24,7 @@
  if (mysqli_query($con, $sql)) {
    echo '<script type="text/javascript">
            alert("Registration complete!");
-           window.location.href="RegisterUniAdmin.php";
+           window.location.href="LoginMenu.php";
          </script>';
  } else {
    echo '<script type="text/javascript">

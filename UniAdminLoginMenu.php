@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Registry</title>
+  <title>UNItied</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 
@@ -65,7 +65,7 @@
   <ul class="nav">
     <li><a href="Homepage.php">Home</a></li>
     <li><a href="AboutUs.php">About Us</a></li>
-    <li><a href="Login.php">Log In</a></li>
+    <li><a href="LoginMenu.php">Log In</a></li>
     <li><a href="RegisterUniversity.php">Registry</a></li>
   </ul>
 

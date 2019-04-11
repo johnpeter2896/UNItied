@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Registry</title>
+  <title>UNItied</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 
@@ -84,16 +84,19 @@
 </div>
 <div class="register-form">
 <form id="register-form"  action="applicantloginbackend.php" method="POST">
-<label  for="applicantUsername">Username</label>
+<label  for="username">Username</label>
 <div class="form-group">
-<input id="usernameText" class="form-control" name="username"type="text" required>
+<input id="usernameText" class="form-control" name="appuser"type="text" required>
 </div>
-<label for="applicantPassword">Password</label>
+<label for="password">Password</label>
 <div class="form-group">
-<input id="passwordText" name="password" type="password" class="form-control" required></input>
+<input id="passwordText" name="apppass" type="password" class="form-control" required></input>
 </div>
 <br>
 <input id="submitBtn" type="submit" class="form-control submit" value="Log In"><br>
+<a href="ApplicantSignup.php">
+  <input class="btn" type="button" name="" value="Sign Up?">
+</a>
   </form>
 
 </div>
